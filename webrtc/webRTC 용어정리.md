@@ -8,6 +8,11 @@ ICE(Interactive Connectivity Establishment)
 
 - 브라우저가 peer를 통한 연결이 가능하도록 해주는 프레임 워크
 
+IceCandidate
+
+- WebRTC가 원격 장치와 통신을 하기 위해 요구되는 프로토콜과 라우팅에 대해 알려줌
+- WebRTC 피어 연결을 처음 시작하게되면, 일반적으로 여러개의 candiate들이 연결의 각 end에 의해 만들어집니다. 그리고 이 과정은 로컬 유저와 원격 유저가 연결을 위해 최고의 방법을 서로의 동의하에 선택하기 전까지 계속 됩니다. 이후에 WebRTC가 선택한 candidate를 사용해서 연결을 시도하게됩니다.
+
 STUN(Session Traversal Utilities for NAT) 서버
 
 - 클라이언트 자신의 Public Address(IP:PORT)를 알려준다.
@@ -19,8 +24,7 @@ NAT(Network Address Translation)
 Symmetric NAT
 
 - 패킷을 보내는 외부 서버마다 다른 NAT 매핑을 사용한다. PC에서 패킷을 특정 서버로 보내면 그 서버에서 보낸 패킷만 PC로 전달된다.
-클라이언트와 서버 통신 시 둘중 하나라도 Symmetric NAT이 아니라면 괜찮지만 둘 다 라면 서로의 요청과 응답을 못 받을 수 있음
-
+  클라이언트와 서버 통신 시 둘중 하나라도 Symmetric NAT이 아니라면 괜찮지만 둘 다 라면 서로의 요청과 응답을 못 받을 수 있음
 
 TURN(Traversal(순회) Using Relays around NAT) 서버
 
