@@ -41,3 +41,5 @@ P2P 방식의 경우는 서버를 거치지 않는 방식이기에 모니터링�
 - 예를 들어 최소 인스턴스 수 1개, 원하는 인스턴스 용량 2개, 최대 인스턴스 수 4개가 됩니다. 사용자가 정의한 조정 정책에 따라 인스턴스 수가 최소 및 최대 인스턴스 수 내에서 지정하는 조건에 따라 조절됩니다.
 
 ![as-basic-diagram](https://user-images.githubusercontent.com/87928719/151394958-33c59c56-5913-4a9c-b8bf-2597da7d9003.png)
+
+[이미지 출처](https://docs.aws.amazon.com/ko_kr/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
