@@ -1,4 +1,5 @@
 WebRTC 용어 정리
+>WebRTC는 HTML5와 Javascript API를 사용해 웹상에서 별도의 플러그인이나 소프트웨어를 설치할 필요없이 실시간으로 음성 통화, 비디오 통신, P2P 파일 공유 등을 할 수 있도록 해주었습니다.
 
 1. Signaling 서버(P2P, Mesh) 방식: 서버에게 시그널을 보내 서로의 정보를 확인하고 직접 통신
 2. SFU(Selective Forwarding Unit) 서버 방식: 종단 간 미디어 트래픽을 중계하는 중앙 서버 방식
