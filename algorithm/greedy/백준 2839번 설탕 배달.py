@@ -6,7 +6,7 @@
 """
 
 import sys
-N = int(sys.stdin.readline())  # input 함수 대체
+N = int(sys.stdin.readline())  # input 함수 대체, 배달해야 할 설탕의 무게
 
 for i in range(N // 5, -1, -1):  # 먼저 5kg 봉지에 최대로 담고 1봉지씩 빼는 방식
     kg = N  # 입력으로 받은 배달해야할 설탕의 무게
