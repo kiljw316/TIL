@@ -28,17 +28,17 @@ def BFS(graph, start_node):
 
 
 def DFS(graph):
-    for node in sorted(graph[dfs_stack[-1]]):
-        if node not in dfs_passed:
-            dfs_stack.append(node)
-            dfs_passed.append(node)
-            DFS(graph)
+    for node in sorted(graph[dfs_stack[-1]]):  # 가장 먼저 방문한 노드의 자식노드들 순회
+        if node not in dfs_passed:  # 자식노드가 방문하지 않았던 노드라면
+            dfs_stack.append(node)  # stack에 저장
+            dfs_passed.append(node)  # 방문 처리
+            DFS(graph)  # 해당 자식노드를 기준으로 DFS 재귀호출
     else:
-        dfs_stack.pop()
+        dfs_stack.pop()  # 모든 자식노드들을 순회하면 스택에서 제거
 
 
-dfs_passed = [V]
-dfs_stack = [V]
+dfs_passed = [V]  # DFS용 방문 체크 리스트
+dfs_stack = [V]  # DFS용 스택
 
 DFS(graph)
 print(*dfs_passed)  # "*": 목록들을 풀어서 표시
