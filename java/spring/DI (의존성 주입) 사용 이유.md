@@ -20,7 +20,7 @@
 
 - `Controller 5개`가 각각 `Service1` 을 생성하여 사용
 
-- `Repository1` 생성자 변경에 의해
+- `Repository1` 생성자 변경에 의해 . . .
 
     => `모든 Controller` 와 `모든 Service`의 코드 변경이 필요해짐
 
